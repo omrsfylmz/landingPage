@@ -4,6 +4,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
+import { ShiftingDropDown } from "@/components/ui/ShiftingDropDown";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -26,11 +27,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans",
           fontSans.variable
         )}
       >
-        {children}
+        <ShiftingDropDown />
+        <div>{children}</div>
       </body>
     </html>
   );
