@@ -86,10 +86,10 @@ const Images = ({ imgIndex }: { imgIndex: number }) => {
               backgroundPosition: "center",
             }}
             animate={{
-              scale: imgIndex === idx ? 0.95 : 0.85,
+              scale: imgIndex === idx ? 1 : 0.9,
             }}
             transition={SPRING_OPTIONS}
-            className="aspect-video w-full md:w-3/4 lg:w-1/2 shrink-0 rounded-xl bg-neutral-800 object-cover"
+            className="aspect-video w-full shrink-0 rounded-xl bg-neutral-800 object-cover"
           />
         );
       })}
