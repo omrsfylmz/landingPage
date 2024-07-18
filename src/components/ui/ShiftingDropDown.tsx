@@ -1,12 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import {
-  FiArrowRight,
-  FiBarChart2,
-  FiChevronDown,
-  FiHome,
-  FiPieChart,
-} from "react-icons/fi";
+import { FiArrowRight, FiChevronDown } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const ShiftingDropDown = () => {
@@ -21,7 +15,7 @@ const Tabs = () => {
   const [selected, setSelected] = useState(null);
   const [dir, setDir] = useState(null);
 
-  const handleSetSelected = (val) => {
+  const handleSetSelected = (val: any) => {
     if (typeof selected === "number" && typeof val === "number") {
       setDir(selected > val ? "r" : "l");
     } else if (val === null) {
@@ -122,7 +116,7 @@ const Content = ({ selected, dir }) => {
 };
 
 const Bridge = () => (
-  <div className="absolute -top-[24px] left-0 right-0 h-[24px]" />
+  <div className="absolute -top-[124px] left-0 right-0 h-[24px]" />
 );
 
 const Nub = ({ selected }) => {
@@ -160,132 +154,155 @@ const Nub = ({ selected }) => {
   );
 };
 
-const Products = () => {
+const Celebrity = () => {
   return (
     <div>
       <div className="flex gap-4">
         <div>
-          <h3 className="mb-2 text-sm font-medium">Startup</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Bookkeeping
+          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
+          <a
+            href="#"
+            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale Kimdir?
           </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Invoicing
-          </a>
-        </div>
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Scaleup</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Live Coaching
-          </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            Reviews
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Tax/VAT
-          </a>
-        </div>
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Enterprise</h3>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            White glove
-          </a>
-          <a href="#" className="mb-1 block text-sm text-neutral-400">
-            SOX Compliance
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            Staffing
-          </a>
-          <a href="#" className="block text-sm text-neutral-400">
-            More
+          <a
+            href="#"
+            className="block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale'ye Saygı Sergisi
           </a>
         </div>
       </div>
-
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
-        <span>View more</span>
-        <FiArrowRight />
-      </button>
     </div>
   );
 };
-
-const Pricing = () => {
+const Jury = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 divide-x divide-neutral-700">
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiHome className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Startup</span>
-      </a>
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiBarChart2 className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Scaleup</span>
-      </a>
-      <a
-        href="#"
-        className="flex w-full flex-col items-center justify-center py-2 text-neutral-400 transition-colors hover:text-neutral-50"
-      >
-        <FiPieChart className="mb-2 text-xl text-indigo-300" />
-        <span className="text-xs">Enterprise</span>
-      </a>
+    <div>
+      <div className="flex gap-4">
+        <div>
+          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
+          <a
+            href="#"
+            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale Kimdir?
+          </a>
+          <a
+            href="#"
+            className="block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale'ye Saygı Sergisi
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+const Winner = () => {
+  return (
+    <div>
+      <div className="flex gap-4">
+        <div>
+          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
+          <a
+            href="#"
+            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale Kimdir?
+          </a>
+          <a
+            href="#"
+            className="block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale'ye Saygı Sergisi
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+const Press = () => {
+  return (
+    <div>
+      <div className="flex gap-4">
+        <div>
+          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
+          <a
+            href="#"
+            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale Kimdir?
+          </a>
+          <a
+            href="#"
+            className="block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale'ye Saygı Sergisi
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+const Scholarship = () => {
+  return (
+    <div>
+      <div className="flex gap-4">
+        <div>
+          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
+          <a
+            href="#"
+            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale Kimdir?
+          </a>
+          <a
+            href="#"
+            className="block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Afife Jale'ye Saygı Sergisi
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
 
-const Blog = () => {
+const Speech = () => {
   return (
     <div>
       <div className="grid grid-cols-2 gap-2">
-        <a href="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="/imgs/blog/4.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium">Lorem ipsum dolor</h4>
-          <p className="text-xs text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
-            quidem eos.
-          </p>
-        </a>
-        <a href="#">
-          <img
-            className="mb-2 h-14 w-full rounded object-cover"
-            src="/imgs/blog/5.png"
-            alt="Placeholder image"
-          />
-          <h4 className="mb-0.5 text-sm font-medium">Lorem ipsum dolor</h4>
-          <p className="text-xs text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illo
-            quidem eos.
-          </p>
-        </a>
+        <a href="/sanata-sozumuz">SANATA SÖZÜMÜZ</a>
       </div>
-      <button className="ml-auto mt-4 flex items-center gap-1 text-sm text-indigo-300">
-        <span>View more</span>
-        <FiArrowRight />
-      </button>
     </div>
   );
 };
 
 const TABS = [
   {
-    title: "Products",
-    Component: Products,
+    title: "Sanata Sözümüz",
+    Component: Speech,
   },
   {
-    title: "Pricing",
-    Component: Pricing,
+    title: "Afife Jale'yi Tanımak",
+    Component: Celebrity,
   },
   {
-    title: "Blog",
-    Component: Blog,
+    title: "Yönetmelik ve Jüri Üyeleri",
+    Component: Jury,
+  },
+  {
+    title: "Kazananlar ve Adaylar",
+    Component: Winner,
+  },
+  {
+    title: "Basın Odası",
+    Component: Press,
+  },
+  {
+    title: "TEV Tiyatro Bursu",
+    Component: Scholarship,
   },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
