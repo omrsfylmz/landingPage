@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { FiArrowRight, FiChevronDown } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const ShiftingDropDown = () => {
@@ -13,9 +13,9 @@ export const ShiftingDropDown = () => {
 
 const Tabs = () => {
   const [selected, setSelected] = useState(null);
-  const [dir, setDir] = useState(null);
+  const [dir, setDir] = useState<"r" | "l" | null>(null);
 
-  const handleSetSelected = (val) => {
+  const handleSetSelected = (val: any) => {
     if (typeof selected === "number" && typeof val === "number") {
       setDir(selected > val ? "r" : "l");
     } else if (val === null) {
@@ -53,7 +53,17 @@ const Tabs = () => {
   );
 };
 
-const Tab = ({ children, tab, handleSetSelected, selected }) => {
+const Tab = ({
+  children,
+  tab,
+  handleSetSelected,
+  selected,
+}: {
+  children: React.ReactNode;
+  tab: any;
+  handleSetSelected: any;
+  selected: any;
+}) => {
   return (
     <button
       id={`shift-tab-${tab}`}
@@ -75,7 +85,15 @@ const Tab = ({ children, tab, handleSetSelected, selected }) => {
   );
 };
 
-const Content = ({ selected, dir, handleSetSelected }) => {
+const Content = ({
+  selected,
+  dir,
+  handleSetSelected,
+}: {
+  selected: any;
+  dir: any;
+  handleSetSelected: any;
+}) => {
   return (
     <motion.div
       id="overlay-content"
@@ -124,7 +142,7 @@ const Bridge = () => (
   <div className="absolute -top-[24px] left-0 right-0 h-[24px]" />
 );
 
-const Nub = ({ selected }) => {
+const Nub = ({ selected }: { selected: any }) => {
   const [left, setLeft] = useState(0);
 
   useEffect(() => {
@@ -164,7 +182,12 @@ const Speech = () => {
   return (
     <div>
       <div className="grid grid-cols-2 gap-2">
-        <a href="/sanata-sozumuz">SANATA SÖZÜMÜZ</a>
+        <a
+          className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+          href="/sanata-sozumuz"
+        >
+          Sanata Sözümüz
+        </a>
       </div>
     </div>
   );
@@ -175,7 +198,9 @@ const Celebrity = () => {
     <div>
       <div className="flex gap-4">
         <div>
-          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
+          <h3 className="mb-2 text-sm font-medium">
+            Afife Jale&rsquo;yi Tanımak
+          </h3>
           <a
             href="#"
             className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
@@ -186,7 +211,7 @@ const Celebrity = () => {
             href="#"
             className="block text-sm text-neutral-400  hover:text-neutral-50"
           >
-            Afife Jale'ye Saygı Sergisi
+            Afife Jale&apos;ye Saygı Sergisi
           </a>
         </div>
       </div>
@@ -200,7 +225,7 @@ const Jury = () => {
       <div className="flex gap-4">
         <div>
           <h3 className="mb-2 text-sm font-medium">
-            Yönetmelik ve Jüri Üyeleri"
+            Yönetmelik ve Jüri Üyeleri&quot;
           </h3>
           <a
             href="#"
