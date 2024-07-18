@@ -15,7 +15,7 @@ const Tabs = () => {
   const [selected, setSelected] = useState(null);
   const [dir, setDir] = useState(null);
 
-  const handleSetSelected = (val: any) => {
+  const handleSetSelected = (val) => {
     if (typeof selected === "number" && typeof val === "number") {
       setDir(selected > val ? "r" : "l");
     } else if (val === null) {
@@ -26,10 +26,7 @@ const Tabs = () => {
   };
 
   return (
-    <div
-      onMouseLeave={() => handleSetSelected(null)}
-      className="relative flex h-fit gap-2"
-    >
+    <div className="relative flex h-fit gap-2">
       {TABS.map((t) => {
         return (
           <Tab
@@ -44,7 +41,13 @@ const Tabs = () => {
       })}
 
       <AnimatePresence>
-        {selected && <Content dir={dir} selected={selected} />}
+        {selected && (
+          <Content
+            dir={dir}
+            selected={selected}
+            handleSetSelected={handleSetSelected}
+          />
+        )}
       </AnimatePresence>
     </div>
   );
@@ -72,7 +75,7 @@ const Tab = ({ children, tab, handleSetSelected, selected }) => {
   );
 };
 
-const Content = ({ selected, dir }) => {
+const Content = ({ selected, dir, handleSetSelected }) => {
   return (
     <motion.div
       id="overlay-content"
@@ -88,7 +91,9 @@ const Content = ({ selected, dir }) => {
         opacity: 0,
         y: 8,
       }}
-      className="absolute left-0 top-[calc(100%_+_24px)] w-96 rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 p-4"
+      className="absolute left-0 top-[calc(100%_+_24px)] w-[1050px] rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 p-4"
+      onMouseEnter={() => handleSetSelected(selected)}
+      onMouseLeave={() => handleSetSelected(null)}
     >
       <Bridge />
       <Nub selected={selected} />
@@ -116,7 +121,7 @@ const Content = ({ selected, dir }) => {
 };
 
 const Bridge = () => (
-  <div className="absolute -top-[124px] left-0 right-0 h-[24px]" />
+  <div className="absolute -top-[24px] left-0 right-0 h-[24px]" />
 );
 
 const Nub = ({ selected }) => {
@@ -134,6 +139,7 @@ const Nub = ({ selected }) => {
       if (!hoveredTab || !overlayContent) return;
 
       const tabRect = hoveredTab.getBoundingClientRect();
+      console.log(tabRect);
       const { left: contentLeft } = overlayContent.getBoundingClientRect();
 
       const tabCenter = tabRect.left + tabRect.width / 2 - contentLeft;
@@ -151,6 +157,16 @@ const Nub = ({ selected }) => {
       transition={{ duration: 0.25, ease: "easeInOut" }}
       className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-tl border border-neutral-600 bg-neutral-900"
     />
+  );
+};
+
+const Speech = () => {
+  return (
+    <div>
+      <div className="grid grid-cols-2 gap-2">
+        <a href="/sanata-sozumuz">SANATA SÖZÜMÜZ</a>
+      </div>
+    </div>
   );
 };
 
@@ -177,92 +193,26 @@ const Celebrity = () => {
     </div>
   );
 };
+
 const Jury = () => {
   return (
     <div>
       <div className="flex gap-4">
         <div>
-          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
+          <h3 className="mb-2 text-sm font-medium">
+            Yönetmelik ve Jüri Üyeleri"
+          </h3>
           <a
             href="#"
             className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
           >
-            Afife Jale Kimdir?
+            Yönetmelik
           </a>
           <a
             href="#"
             className="block text-sm text-neutral-400  hover:text-neutral-50"
           >
-            Afife Jale'ye Saygı Sergisi
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
-const Winner = () => {
-  return (
-    <div>
-      <div className="flex gap-4">
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
-          <a
-            href="#"
-            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            Afife Jale Kimdir?
-          </a>
-          <a
-            href="#"
-            className="block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            Afife Jale'ye Saygı Sergisi
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
-const Press = () => {
-  return (
-    <div>
-      <div className="flex gap-4">
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
-          <a
-            href="#"
-            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            Afife Jale Kimdir?
-          </a>
-          <a
-            href="#"
-            className="block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            Afife Jale'ye Saygı Sergisi
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
-const Scholarship = () => {
-  return (
-    <div>
-      <div className="flex gap-4">
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Afife Jale'yi Tanımak</h3>
-          <a
-            href="#"
-            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            Afife Jale Kimdir?
-          </a>
-          <a
-            href="#"
-            className="block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            Afife Jale'ye Saygı Sergisi
+            Jüri Üyeleri
           </a>
         </div>
       </div>
@@ -270,11 +220,49 @@ const Scholarship = () => {
   );
 };
 
-const Speech = () => {
+const Winner = () => {
   return (
     <div>
-      <div className="grid grid-cols-2 gap-2">
-        <a href="/sanata-sozumuz">SANATA SÖZÜMÜZ</a>
+      <div className="flex gap-4">
+        <div>
+          <h3 className="mb-2 text-sm font-medium">Kazananlar ve Adaylar</h3>
+          <a
+            href="#"
+            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            2024
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Press = () => {
+  return (
+    <div>
+      <div className="flex gap-4">
+        <div>
+          <h3 className="mb-2 text-sm font-medium">Basın Odası</h3>
+          <a
+            href="#"
+            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+          >
+            Basın Bultenlerimiz
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const Scholarship = () => {
+  return (
+    <div className="flex gap-4">
+      <div>
+        <a href="" className="mb-2 text-sm font-medium">
+          TEV Tiyatro Bursu
+        </a>
       </div>
     </div>
   );
