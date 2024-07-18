@@ -252,7 +252,7 @@ const Winner = () => {
         <div>
           <h3 className="mb-2 text-sm font-medium">Kazananlar ve Adaylar</h3>
           <a
-            href="#"
+            href="/kazananlar-ve-adaylar/2024"
             className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
           >
             2024
