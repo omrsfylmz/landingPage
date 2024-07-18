@@ -4,7 +4,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
-import { ShiftingDropDown } from "@/components/ui/ShiftingDropDown";
+import { ShiftingDropDown } from "@/components/ShiftingDropDown";
 
 const fontSans = FontSans({
   subsets: ["latin"],

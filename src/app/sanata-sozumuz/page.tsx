@@ -14,7 +14,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/dropdown-menu";
 const SanataSozumuz = () => {
   return (
     <div className="container mx-auto px-4 flex flex-col justify-center items-center">

@@ -1,13 +1,12 @@
 "use client";
-import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { SwipeCarousel } from "@/components/SwipeCarousel";
 
 export default function Home() {
-  const [hovered, setHovered] = useState<any>(null);
-
   return (
     <main>
-      <div>hello</div>
+      <div className="container mx-auto">
+        <SwipeCarousel />
+      </div>
     </main>
   );
 }
