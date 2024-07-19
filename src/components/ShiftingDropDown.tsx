@@ -234,7 +234,7 @@ const Jury = () => {
             Yönetmelik
           </a>
           <a
-            href="#"
+            href="/yonetmelik-ve-juri-uyeleri/juri-uyeleri"
             className="block text-sm text-neutral-400  hover:text-neutral-50"
           >
             Jüri Üyeleri
