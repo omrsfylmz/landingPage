@@ -202,7 +202,7 @@ const Celebrity = () => {
             Afife Jale&rsquo;yi Tanımak
           </h3>
           <a
-            href="#"
+            href="/afife-jale-kimdir"
             className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
           >
             Afife Jale Kimdir?
