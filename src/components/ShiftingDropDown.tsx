@@ -199,19 +199,19 @@ const Celebrity = () => {
       <div className="flex gap-4">
         <div>
           <h3 className="mb-2 text-sm font-medium">
-            Afife Jale&rsquo;yi Tanımak
+            Üstün Akmen&apos;i Tanımak
           </h3>
           <a
             href="/afife-jale-kimdir"
             className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
           >
-            Afife Jale Kimdir?
+            Üstün Akmen Kimdir?
           </a>
           <a
             href="#"
             className="block text-sm text-neutral-400  hover:text-neutral-50"
           >
-            Afife Jale&apos;ye Saygı Sergisi
+            Üstün Akmen&apos;e Saygı Sergisi
           </a>
         </div>
       </div>
@@ -299,7 +299,7 @@ const TABS = [
     Component: Speech,
   },
   {
-    title: "Afife Jale'yi Tanımak",
+    title: "Üstün Akmen'i Tanımak",
     Component: Celebrity,
   },
   {

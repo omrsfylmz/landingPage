@@ -1,52 +1,81 @@
-// pages/index.js
 import React from "react";
 import JuryCard from "@/components/JuryCard";
-
+import ProfilePic from "../../../../public/imgs/pp.png";
 const juryMembers = [
   {
-    image: "https://www.afife.org/_assets/img/jury/Merih_Tang%C3%BCn.png",
-    title: "PROF. DR. MERİH TANGÜN",
-    role: "MSGSÜ İst. Devlet Konservatuvarı - Tiyatro ASD\nSZFE Budapeste Drama ve Film Sanatları Üniversitesi",
+    image: ProfilePic,
+    title: "ŞAYLAN AKMEN",
+    role: "KURUCU BAŞKAN",
   },
   {
-    image: "https://www.afife.org/_assets/img/jury/Merih_Tang%C3%BCn.png",
-    title: "AHHAN ŞENER",
-    role: "Oyuncu",
+    image: ProfilePic,
+    title: "ATAOL BEHRAMOĞLU",
+    role: "ŞAİR -YAZAR - ÇEVİRMEN",
   },
   {
-    image: "https://www.afife.org/_assets/img/jury/Merih_Tang%C3%BCn.png",
-    title: "DOÇ. ALİ BARIŞIK",
-    role: "Tiyatro Akademisyeni",
+    image: ProfilePic,
+    title: "YILDIZ TUNBUL",
+    role: "ULUSLARARASI OPERA SANATÇISI - SOPRANO",
   },
   {
-    image: "https://www.afife.org/_assets/img/jury/Merih_Tang%C3%BCn.png",
-    title: "PROF. DR. MERİH TANGÜN",
-    role: "MSGSÜ İst. Devlet Konservatuvarı - Tiyatro ASD\nSZFE Budapeste Drama ve Film Sanatları Üniversitesi",
+    image: ProfilePic,
+    title: "DERYA ALABORA",
+    role: "OYUNCU",
   },
   {
-    image: "https://www.afife.org/_assets/img/jury/Merih_Tang%C3%BCn.png",
-    title: "AHHAN ŞENER",
-    role: "Oyuncu",
+    image: ProfilePic,
+    title: "TAMER LEVENT",
+    role: "OYUNCU -YÖNETMEN- YAZAR- SANAT YÖNETMENİ",
   },
   {
-    image: "https://www.afife.org/_assets/img/jury/Merih_Tang%C3%BCn.png",
-    title: "DOÇ. ALİ BARIŞIK",
-    role: "Tiyatro Akademisyeni",
+    image: ProfilePic,
+    title: "GÜLER BERKİN",
+    role: "AVUKAT",
   },
   {
-    image: "https://www.afife.org/_assets/img/jury/Merih_Tang%C3%BCn.png",
-    title: "PROF. DR. MERİH TANGÜN",
-    role: "MSGSÜ İst. Devlet Konservatuvarı - Tiyatro ASD\nSZFE Budapeste Drama ve Film Sanatları Üniversitesi",
+    image: ProfilePic,
+    title: "SUNA KESKİN",
+    role: "OYUNCU",
   },
   {
-    image: "https://www.afife.org/_assets/img/jury/Merih_Tang%C3%BCn.png",
-    title: "AHHAN ŞENER",
-    role: "Oyuncu",
+    image: ProfilePic,
+    title: "ANTA TOROS",
+    role: "OYUNCU",
   },
   {
-    image: "https://www.afife.org/_assets/img/jury/Merih_Tang%C3%BCn.png",
-    title: "DOÇ. ALİ BARIŞIK",
-    role: "Tiyatro Akademisyeni",
+    image: ProfilePic,
+    title: "DOÇENT DR. SERAP YÜZGÜLLER",
+    role: "SANAT TARİHÇİSİ - AKADEMİSYEN",
+  },
+  {
+    image: ProfilePic,
+    title: "LEVENT KURUMLU",
+    role: "ÖĞRETİM GÖREVLİSİ -TİYATRO VE İNGİLİZ DİLİ EDEBİYATI",
+  },
+  {
+    image: ProfilePic,
+    title: "FİLİZ AYGÜNDÜZ",
+    role: "MİLLİYET SANAT DERGİSİ GENEL YAYIN YÖNETMENİ -ROMANCI",
+  },
+  {
+    image: ProfilePic,
+    title: "DERYA ÖZGÖREN",
+    role: "BASIN PR UZMANI",
+  },
+  {
+    image: ProfilePic,
+    title: "KIVANÇ TERZİOĞLU",
+    role: "FİLM-SAN VAKFI GENEL MÜDÜRÜ",
+  },
+  {
+    image: ProfilePic,
+    title: "SELİN VARDARLI",
+    role: "OYUNCU",
+  },
+  {
+    image: ProfilePic,
+    title: "TURANALP ŞANLI",
+    role: "OYUNCU",
   },
 ];
 
