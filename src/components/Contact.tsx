@@ -9,7 +9,7 @@ const Contact = () => {
       {/* Social Media Links */}
       <div className="flex space-x-4 mb-4">
         <a
-          href="https://twitter.com"
+          href="https://twitter.com/UstunAkmenOdul"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
