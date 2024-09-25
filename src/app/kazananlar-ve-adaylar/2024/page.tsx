@@ -1,4 +1,4 @@
-import Awards from "./components/Awards";
+import Awards from "../components/Awards";
 
 const Home: React.FC = () => {
   const awards = [
