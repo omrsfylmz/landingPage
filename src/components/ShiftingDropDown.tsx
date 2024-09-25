@@ -202,7 +202,7 @@ const Celebrity = () => {
             Üstün Akmen&apos;i Tanımak
           </h3>
           <a
-            href="/afife-jale-kimdir"
+            href="/ustun-akmen-kimdir"
             className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
           >
             Üstün Akmen Kimdir?
