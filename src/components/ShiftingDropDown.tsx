@@ -128,7 +128,7 @@ const Content = ({
         opacity: 0,
         y: 8,
       }}
-      className="absolute left-0 top-[calc(100%_+_24px)] w-[1050px] rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 p-4"
+      className="absolute left-0 top-[calc(100%_+_24px)] w-[750px] rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 p-4"
       onMouseEnter={() => handleSetSelected(selected)}
       onMouseLeave={() => handleSetSelected(null)}
     >
