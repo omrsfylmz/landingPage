@@ -224,15 +224,6 @@ const Jury = () => {
     <div>
       <div className="flex gap-4">
         <div>
-          <h3 className="mb-2 text-sm font-medium">
-            Yönetmelik ve Jüri Üyeleri&quot;
-          </h3>
-          <a
-            href="#"
-            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            Yönetmelik
-          </a>
           <a
             href="/yonetmelik-ve-juri-uyeleri/juri-uyeleri"
             className="block text-sm text-neutral-400  hover:text-neutral-50"
@@ -250,7 +241,7 @@ const Winner = () => {
     <div>
       <div className="flex gap-4">
         <div>
-          <h3 className="mb-2 text-sm font-medium">Kazananlar ve Adaylar</h3>
+          <h3 className="mb-2 text-sm font-medium">Kazananlar</h3>
           <a
             href="/kazananlar-ve-adaylar/2024"
             className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
@@ -285,8 +276,8 @@ const Scholarship = () => {
   return (
     <div className="flex gap-4">
       <div>
-        <a href="" className="mb-2 text-sm font-medium">
-          TEV Tiyatro Bursu
+        <a href="/yazilar" className="mb-2 text-sm font-medium">
+          Üstün Akmen Yazıları{" "}
         </a>
       </div>
     </div>
@@ -303,11 +294,11 @@ const TABS = [
     Component: Celebrity,
   },
   {
-    title: "Yönetmelik ve Jüri Üyeleri",
+    title: "Jüri Üyeleri",
     Component: Jury,
   },
   {
-    title: "Kazananlar ve Adaylar",
+    title: "Kazananlar",
     Component: Winner,
   },
   {
@@ -315,7 +306,7 @@ const TABS = [
     Component: Press,
   },
   {
-    title: "TEV Tiyatro Bursu",
+    title: "Üstün Akmen Yazıları ",
     Component: Scholarship,
   },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));

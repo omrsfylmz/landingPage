@@ -1,4 +1,4 @@
-// components/JuryCard.js
+// components/JuryCard.tsx
 import Image from "next/image";
 import React from "react";
 
