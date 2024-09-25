@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 
 import "./globals.css";
 import { ShiftingDropDown } from "@/components/ShiftingDropDown";
+import Contact from "@/components/Contact";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <ShiftingDropDown />
         <div>{children}</div>
+        <Contact />
       </body>
     </html>
   );

@@ -1,12 +1,10 @@
 "use client";
 import { SwipeCarousel } from "@/components/SwipeCarousel";
 import Image from "next/image"; // For the logo
-import Contact from "@/components/Contact"; // Assuming you have a contact component
 
 export default function Home() {
   return (
     <main className="flex justify-center items-center flex-col container">
-      {/* Logo in the top left corner */}
       <div className="flex items-center w-full justify-between">
         <Image
           className="top-8"
@@ -16,22 +14,17 @@ export default function Home() {
           height={100}
         />
 
-        <div className="flex justify-center items-center mt-20">
+        <div className="flex justify-center items-center mt-20 flex-1">
           <h1 className="text-4xl font-bold text-center">
             Üstün Akmen Ödülleri
           </h1>
         </div>
       </div>
 
-      {/* Carousel */}
       <div className="flex justify-center items-center container mx-auto mt-10">
         <div className="w-full sm:w-3/4 lg:w-2/3 h-[300px]">
           <SwipeCarousel />
         </div>
-      </div>
-
-      <div className="mt-20">
-        <Contact />
       </div>
     </main>
   );
