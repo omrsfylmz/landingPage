@@ -16,10 +16,10 @@ export const ShiftingDropDown = () => {
 
 const LogoSection = () => {
   return (
-    <div className="mr-4">
+    <div className="mr-4 -mt-[9px]">
       <Link href="/">
         <Image
-          src="/logo.jpg" // Replace with the path to your logo
+          src="/logo.png" // Replace with the path to your logo
           alt="Logo"
           width={50}
           height={50}
@@ -273,24 +273,6 @@ const Winner = () => {
   );
 };
 
-const Press = () => {
-  return (
-    <div>
-      <div className="flex gap-4">
-        <div>
-          <h3 className="mb-2 text-sm font-medium">Basın Odası</h3>
-          <a
-            href="#"
-            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            Basın Bultenlerimiz
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 const Scholarship = () => {
   return (
     <div className="flex gap-4">
@@ -320,10 +302,7 @@ const TABS = [
     title: "Kazananlar",
     Component: Winner,
   },
-  {
-    title: "Basın Odası",
-    Component: Press,
-  },
+
   {
     title: "Üstün Akmen Yazıları ",
     Component: Scholarship,
