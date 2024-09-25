@@ -226,12 +226,6 @@ const Celebrity = () => {
           >
             Üstün Akmen Kimdir?
           </a>
-          <a
-            href="#"
-            className="block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            Üstün Akmen&apos;e Saygı Sergisi
-          </a>
         </div>
       </div>
     </div>
@@ -261,12 +255,44 @@ const Winner = () => {
       <div className="flex gap-4">
         <div>
           <h3 className="mb-2 text-sm font-medium">Kazananlar</h3>
-          <a
-            href="/kazananlar-ve-adaylar/2024"
-            className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
-          >
-            2024
-          </a>
+          <div className="flex gap-4 ">
+            <a
+              href="/kazananlar-ve-adaylar/2024"
+              className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+            >
+              2024
+            </a>
+            <a
+              href="/kazananlar-ve-adaylar/2023"
+              className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+            >
+              2023
+            </a>
+            <a
+              href="/kazananlar-ve-adaylar/2022"
+              className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+            >
+              2022
+            </a>
+            <a
+              href="/kazananlar-ve-adaylar/2019"
+              className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+            >
+              2019
+            </a>
+            <a
+              href="/kazananlar-ve-adaylar/2018"
+              className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+            >
+              2018
+            </a>
+            <a
+              href="/kazananlar-ve-adaylar/2017"
+              className="mb-1 block text-sm text-neutral-400  hover:text-neutral-50"
+            >
+              2017
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,12 @@
 import Awards from "../components/Awards";
-
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 const Home: React.FC = () => {
   const awards = [
     {
@@ -237,7 +244,27 @@ const Home: React.FC = () => {
     },
   ];
 
-  return <Awards awards={awards} />;
+  return (
+    <div className="flex gap-3 flex-col mt-2">
+      <Breadcrumb className="mt-3">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/">Ana Sayfa</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/kazananlar-ve-adaylar">
+              Kazananlar ve Adaylar
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbPage>2024</BreadcrumbPage>
+        </BreadcrumbList>
+      </Breadcrumb>
+
+      <Awards awards={awards} />
+    </div>
+  );
 };
 
 export default Home;

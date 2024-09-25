@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Breadcrumb,
-  BreadcrumbEllipsis,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
@@ -9,12 +8,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/dropdown-menu";
 const SanataSozumuz = () => {
   return (
     <div className="flex justify-center items-center container mx-auto">
@@ -76,16 +69,16 @@ const SanataSozumuz = () => {
             <p>
               Farklı disiplinlerdeki kültür ve sanat çalışmalarına verdiğimiz bu
               desteklerin en önemlisi ise 26 yıldır kesintisiz olarak
-              sürdürdüğümüz Yapı Kredi Afife Tiyatro Ödülleri… Bu ödüller
+              sürdürdüğümüz Yapı Kredi Üstün Akmen Tiyatro Ödülleri… Bu ödüller
               vasıtasıyla, “Türk tiyatrosunun fedaisi” olarak tanınan ve
-              hayatını tiyatroya adamış büyük sanatçı Afife Jale’nin ismini
+              hayatını tiyatroya adamış büyük sanatçı Üstün Akmen’in ismini
               yaşatıyor olmaktan büyük onur duyuyoruz. Türk tiyatrosu dün olduğu
-              gibi bugün de, Afife gibi yürekli, inançlı ve sabırlı
+              gibi bugün de, Üstün gibi yürekli, inançlı ve sabırlı
               sanatçıların, gençlerin omuzlarında yükseliyor.
             </p>
             <br />
             <p>
-              İlk günden bu yana Yapı Kredi Afife Tiyatro Ödülleri, Türk
+              İlk günden bu yana Yapı Kredi Üstün Akmen Tiyatro Ödülleri, Türk
               tiyatrosuna, emek ve yaratıcılıklarıyla sahnelerimize can katan
               tüm tiyatro çalışanlarına duyduğumuz derin saygının da bir ifadesi
               oldu.
@@ -100,7 +93,7 @@ const SanataSozumuz = () => {
             <br />
             <p>Saygılarımızla,</p>
             <br />
-            <p>Yapı Kredi Afife Tiyatro Ödülleri</p>
+            <p>Yapı Kredi Üstün Akmen Tiyatro Ödülleri</p>
           </div>
         </div>
       </div>
