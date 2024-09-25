@@ -2,11 +2,30 @@
 import React, { useEffect, useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
 export const ShiftingDropDown = () => {
   return (
     <div className="flex h-14 w-full justify-start bg-neutral-950 pt-2 text-neutral-200 md:justify-center">
+      <LogoSection />
       <Tabs />
+    </div>
+  );
+};
+
+const LogoSection = () => {
+  return (
+    <div className="mr-4">
+      <Link href="/">
+        <Image
+          src="/logo.jpg" // Replace with the path to your logo
+          alt="Logo"
+          width={50}
+          height={50}
+          className="cursor-pointer"
+        />
+      </Link>
     </div>
   );
 };
