@@ -2,6 +2,8 @@ import React from "react";
 import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa"; // Import social media icons
 
 const Contact = () => {
+  const currentYear = new Date().getFullYear(); // Get the current year
+
   return (
     <footer className="flex flex-col items-center justify-center w-full py-6 bg-gray-800 text-gray-300">
       {/* Social Media Links */}
@@ -16,7 +18,7 @@ const Contact = () => {
           <FaTwitter size={24} />
         </a>
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/ustun.akmenodulleri?igsh=cTc3eHMzaW05d3R2&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -25,7 +27,7 @@ const Contact = () => {
           <FaInstagram size={24} />
         </a>
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/profile.php?id=61566339603985"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
@@ -37,7 +39,7 @@ const Contact = () => {
 
       {/* Copyright Message */}
       <p className="text-center text-sm">
-        © 2024 Yapı ve Kredi Bankası A.Ş. Tüm Hakları Saklıdır.
+        © {currentYear} Yapı ve Kredi Bankası A.Ş. Tüm Hakları Saklıdır.
       </p>
     </footer>
   );

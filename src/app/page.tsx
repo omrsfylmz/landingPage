@@ -5,7 +5,7 @@ import Image from "next/image"; // For the logo
 export default function Home() {
   return (
     <main className="flex justify-center items-center flex-col container">
-      <div className="flex items-center w-full justify-between">
+      <div className="flex items-center w-full gap-36 mt-2">
         <Image
           className="top-8"
           src="/logo.png" // Replace with the actual path to your logo
@@ -14,15 +14,11 @@ export default function Home() {
           height={100}
         />
 
-        <div className="flex justify-center items-center mt-20 flex-1">
-          <h1 className="text-4xl font-bold text-center">
-            Üstün Akmen Ödülleri
-          </h1>
-        </div>
+        <h1 className="text-4xl font-bold text-center">Üstün Akmen Ödülleri</h1>
       </div>
 
-      <div className="flex justify-center items-center container mx-auto mt-10">
-        <div className="w-full sm:w-3/4 lg:w-2/3 h-[300px]">
+      <div className="flex justify-center items-center container mx-auto my-2">
+        <div className="w-full sm:w-[500px] lg:w-[800px]">
           <SwipeCarousel />
         </div>
       </div>

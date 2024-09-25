@@ -25,16 +25,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans",
+          "bg-background font-sans flex flex-col justify-between items-center h-full",
           fontSans.variable
         )}
       >
-        <ShiftingDropDown />
-        <div>{children}</div>
-        <Contact />
+        {/* Shifting Dropdown */}
+        <header className="w-full">
+          <ShiftingDropDown />
+        </header>
+
+        {/* Main content */}
+        <main className="flex-grow w-full flex justify-center items-center">
+          {children}
+        </main>
+
+        {/* Contact section at the bottom */}
+        <footer className="w-full">
+          <Contact />
+        </footer>
       </body>
     </html>
   );
