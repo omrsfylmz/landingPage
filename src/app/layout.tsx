@@ -4,9 +4,8 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
-import { ShiftingDropDown } from "@/components/ShiftingDropDown";
 import Contact from "@/components/Contact";
-
+import ShiftingDropDown from "@/components/ShiftingDropDown";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -28,22 +27,22 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body
         className={cn(
-          "bg-background font-sans flex flex-col justify-between items-center h-full",
+          "bg-background font-sans flex flex-col justify-between items-center min-h-screen",
           fontSans.variable
         )}
       >
         {/* Shifting Dropdown */}
-        <header className="w-full">
+        <header className="w-full py-4 px-4 sm:px-8">
           <ShiftingDropDown />
         </header>
 
         {/* Main content */}
-        <main className="flex-grow w-full flex justify-center items-center">
+        <main className="flex-grow w-full max-w-7xl px-4 sm:px-8 flex justify-center items-center">
           {children}
         </main>
 
         {/* Contact section at the bottom */}
-        <footer className="w-full">
+        <footer className="w-full py-4 px-4 sm:px-8 bg-gray-800 text-white">
           <Contact />
         </footer>
       </body>
