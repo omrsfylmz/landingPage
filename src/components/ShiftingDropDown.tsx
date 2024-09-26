@@ -108,36 +108,42 @@ const ShiftingDropDown = () => {
               <div className="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 overflow-y-scroll max-h-[130px]">
                 <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
                   <Link
+                    onClick={() => toggleDropdown("dropdown1")}
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2024"
                   >
                     2024
                   </Link>
                   <Link
+                    onClick={() => toggleDropdown("dropdown1")}
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2023"
                   >
                     2023
                   </Link>
                   <Link
+                    onClick={() => toggleDropdown("dropdown1")}
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2022"
                   >
                     2022
                   </Link>
                   <Link
+                    onClick={() => toggleDropdown("dropdown1")}
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2019"
                   >
                     2019
                   </Link>
                   <Link
+                    onClick={() => toggleDropdown("dropdown1")}
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2018"
                   >
                     2018
                   </Link>
                   <Link
+                    onClick={() => toggleDropdown("dropdown1")}
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2017"
                   >
