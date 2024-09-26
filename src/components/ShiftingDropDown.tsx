@@ -59,36 +59,36 @@ const ShiftingDropDown = () => {
             isMenuOpen ? "flex" : "hidden"
           }`}
         >
-          <a
+          <Link
             className="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="/"
           >
             AnaSayfa
-          </a>
-          <a
+          </Link>
+          <Link
             className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="/sanata-sozumuz"
           >
             Sanata Sözümüz
-          </a>
-          <a
+          </Link>
+          <Link
             className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="/ustun-akmen-kimdir"
           >
             Üstün Akmen
-          </a>
-          <a
+          </Link>
+          <Link
             className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="/yazilar"
           >
             Üstün Akmen Yazıları
-          </a>
-          <a
+          </Link>
+          <Link
             className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
             href="/juri-uyeleri"
           >
             Jüri Üyeleri
-          </a>
+          </Link>
           <div className="relative">
             <button
               onClick={() => toggleDropdown("dropdown1")}
@@ -110,44 +110,44 @@ const ShiftingDropDown = () => {
               </svg>
             </button>
             {dropdowns.dropdown1 && (
-              <div className="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
+              <div className="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 overflow-y-scroll max-h-[130px]">
                 <div className="px-2 py-2 bg-white rounded-md shadow dark:bg-gray-800">
-                  <a
+                  <Link
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2024"
                   >
                     2024
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2023"
                   >
                     2023
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2022"
                   >
                     2022
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2019"
                   >
                     2019
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2018"
                   >
                     2018
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="/kazananlar-ve-adaylar/2017"
                   >
                     2017
-                  </a>
+                  </Link>
                 </div>
               </div>
             )}
